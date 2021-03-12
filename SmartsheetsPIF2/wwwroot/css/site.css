@@ -25,12 +25,10 @@ a {
 }
 
 
-
-
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 @media (min-width: 768px) {
   html {
@@ -165,7 +163,6 @@ a.button:hover {
 }*/
 
 
-
 /* ---------------------- Media Queries ---------------------- */
 
 @media screen and (max-width: 720px) {
@@ -175,18 +172,18 @@ a.button:hover {
 }
 
 
-    @media screen and (max-width: 480px) {
-        .details {
-            display: flex;
-            flex-direction: column;
-            /*        padding-left: 15px;*/
-        }
-
-        .column-right {
-            top: 0;
-        }
-
-        div.row.deliverables {
-            flex-wrap: wrap;
-        }
+@media screen and (max-width: 480px) {
+    .details {
+        display: flex;
+        flex-direction: column;
+        /*        padding-left: 15px;*/
     }
+
+    .column-right {
+        top: 0;
+    }
+
+    div.row.deliverables {
+        flex-wrap: wrap;
+    }
+}
