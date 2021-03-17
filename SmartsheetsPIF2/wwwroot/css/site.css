@@ -136,6 +136,16 @@ a.button:hover {
     display: none;
 }
 
+.action-header {
+    text-align: center;
+    min-width: 130px;
+}
+
+.action-buttons {
+    white-space: nowrap;
+}
+
+
 
 /*.table-split tr {
     width: 50%;
