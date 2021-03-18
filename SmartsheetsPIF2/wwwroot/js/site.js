@@ -13,3 +13,7 @@ $(function () {
         $(this).height($(this).prop('scrollHeight'));
     });
 });
+
+$(window).on('load', function () {
+    $('#myModal').modal('show');
+});
