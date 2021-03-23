@@ -84,6 +84,8 @@ namespace SmartsheetsPIF.Models
         [Required(ErrorMessage = "Please enter a number.")]
         [RegularExpression("^[0-9]*$", ErrorMessage = "Must be a number")]
         public string staticPerSet { get; set; }
+
+        public string archiveProject { get; set; }
     }
 
     /*Validators*/

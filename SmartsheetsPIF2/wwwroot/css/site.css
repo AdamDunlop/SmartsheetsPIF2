@@ -153,6 +153,7 @@ a.button:hover {
 
 .action-buttons {
     min-width: 115px;
+    white-space: nowrap;
 }
 /*.table-split tr {
     width: 50%;

@@ -407,6 +407,10 @@ namespace SmartsheetsPIF2.Controllers
                                 }
                                 break;
 
+                            case "Archive":
+                                pif.archiveProject = cell.DisplayValue;
+                                break;
+
                         }
                     }
                 }
@@ -448,6 +452,7 @@ namespace SmartsheetsPIF2.Controllers
             var number_of_sets_cell = new Cell();
             var animated_per_set_cell = new Cell();
             var static_per_set_cell = new Cell();
+            var archive_cell = new Cell();
 
 
             foreach (var cell in row.Cells)
@@ -546,6 +551,11 @@ namespace SmartsheetsPIF2.Controllers
                         wbs_cell.Value = pif.wbs_link;
                         break;
 
+                    case "Archive":
+                        archive_cell.ColumnId = columnid;
+                        archive_cell.Value = pif.archiveProject;
+                        break;
+
                    
                 }
             }
@@ -570,7 +580,8 @@ namespace SmartsheetsPIF2.Controllers
                     specs_cell,
                     number_of_sets_cell,
                     animated_per_set_cell,
-                    static_per_set_cell
+                    static_per_set_cell,
+                    archive_cell
                 }
             };
 
@@ -647,6 +658,12 @@ namespace SmartsheetsPIF2.Controllers
                 options.Add(new SelectListItem { Text = team, Value = team });
             }
             return options;
+        }
+
+        public void ArchiveProject(Column archive_col)
+        {
+
+
         }
     }
 }
