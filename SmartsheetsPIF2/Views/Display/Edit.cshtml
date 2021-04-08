@@ -173,6 +173,19 @@
     </div>
 
 }
+
+<div class="edit-wbs">
+    @if (Model.wbs_link != null)
+    {
+        <IFRAME WIDTH="100%" HEIGHT=700 FRAMEBORDER=0 SRC="@Model.wbs_link"></IFRAME>
+    }
+    else
+    {
+        <div class="alert alert-warning" role="alert">No WBS provided.</div>
+    }
+</div>
+
+
 <div class="back">
     <a asp-action="List" class="btn btn-secondary">
         <i class="bi bi-arrow-bar-left"></i>
