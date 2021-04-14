@@ -74,7 +74,9 @@
                         @Html.DisplayFor(modelItem => item.lob)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.projectName)
+                        <a href="@Url.Action("Details", "PDS",new { id = item.pif_Id } )" class="btn btn-primary">
+                            @Html.DisplayFor(modelItem => item.projectName)
+                        </a>
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.pm)
@@ -94,10 +96,6 @@
 
                         <a href="@Url.Action("Edit", "PDS",new { id = item.pif_Id } )" class="btn btn-warning">
                             <i class="bi bi-pencil-fill"></i>
-                        </a>
-
-                        <a href="@Url.Action("Details", "PDS",new { id = item.pif_Id } )" class="btn btn-primary">
-                            <i class="bi bi-card-list"></i>
                         </a>
                         <button class="btn btn-secondary">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
