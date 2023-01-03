@@ -1,4 +1,4 @@
-﻿@model SmartsheetsPIF.Models.PDSModel
+﻿@model SmartsheetsPIF.Models.NIFTImodel
 
 @{
     ViewData["Title"] = "Project Details";
@@ -107,29 +107,7 @@
                             <td class="alert alert-warning" role="alert">No Collab Deck link provided.</td>
                         }
                     </tr>
-                    <tr>
-                        <td>PSDs</td>
-                        @if (Model.PSDs != null)
-                        {
-                            <td><a href="@Model.PSDs">PSDs</a></td>
-                        }
-                        else
-                        {
-                            <td class="alert alert-warning" role="alert">No PSDs link provided.</td>
-                        }
-                    </tr>
-
-                    <tr>
-                        <td>FxF Deck</td>
-                        @if (Model.fxfDeck != null)
-                        {
-                            <td><a href="@Model.fxfDeck">FxF Deck</a></td>
-                        }
-                        else
-                        {
-                            <td class="alert alert-warning" role="alert">No FxF Deck link provided.</td>
-                        }
-                    </tr>
+     
 
                     <tr>
                         <td>Delivery Folder</td>

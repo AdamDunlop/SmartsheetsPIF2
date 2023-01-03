@@ -1,0 +1,75 @@
+﻿@model IEnumerable<SmartsheetsPIF.Models.NIFTImodel>
+
+@{
+    ViewData["Title"] = "NIFTI Pipeline";
+}
+
+<div>
+    <label for="dog-names">Choose a dog name:</label>
+    <select>
+        <option value="penny">NIFIT</option>
+        <option value="delliah">Production Video</option>
+        <option value="apollo">Production Tech</option>
+    </select>
+</div>
+
+<div style="display:flex" max-width="1440px">
+
+
+
+    <div>
+        <IFRAME WIDTH=450 HEIGHT=700 FRAMEBORDER=0 SRC="https://app.smartsheet.com/b/publish?EQBCT=026ac6bc76264c14be355d9a59bc0f75"></IFRAME>
+    </div>
+
+    <div>
+        <IFRAME WIDTH=450 HEIGHT=700 FRAMEBORDER=0 SRC="https://app.smartsheet.com/b/publish?EQBCT=e43898e92cf94eb092664affebd93013"></IFRAME>
+    </div>
+
+    <div>
+        <IFRAME WIDTH=450 HEIGHT=700 FRAMEBORDER=0 SRC="https://app.smartsheet.com/b/publish?EQBCT=7eb07fff896e4f73b06e3554bf828559"></IFRAME>
+    </div>
+
+</div>
+
+
+<div class="col-12 col-md-6">
+
+    <div class="form-group">
+        <label class="control-label">Sender Email</label>
+        <span class="text-danger"></span>
+
+    </div>
+
+        <div class=" col-sm-12 col-md-4">
+
+            <div class="form-group">
+                <label class="control-label">Sender Name</label>
+       
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class=" col-sm-12 col-md-4">
+
+            <div class="form-group">
+                <label class="control-label">Client(s)</label>
+                <span class="text-danger"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Date</label>
+        <span class="text-danger"></span>
+    </div>
+
+
+    <div class="form-group">
+        <label class="control-label">Specs/Resizes</label>
+    
+    </div>
+
+    <div class="form-group">
+        <input type="submit" asp-action="Edit" value="Save" class="btn btn-success float-right" />
+    </div>
+</div>

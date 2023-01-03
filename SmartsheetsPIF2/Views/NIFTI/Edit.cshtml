@@ -1,4 +1,4 @@
-﻿@model SmartsheetsPIF.Models.PDSModel
+﻿@model SmartsheetsPIF.Models.NIFTImodel
 
 @{
     ViewData["Title"] = "Edit";
@@ -54,24 +54,6 @@
         <span asp-validation-for="status_options" class="text-danger"></span>
     </div>
 
-    @*<div class="form-group">
-            <label asp-for="pm" class="control-label">Project Manager</label>
-            @Html.TextBoxFor(m => m.pm, new { @class = "form-control" })
-            <span asp-validation-for="pm" class="text-danger"></span>
-    </div>*@
-
-    @*<div class="form-group">
-        <label asp-for="creativeLead" class="control-label">Creative Lead</label>
-        @Html.TextBoxFor(m => m.creativeLead, new { @class = "form-control" })
-        <span asp-validation-for="creativeLead" class="text-danger"></span>
-    </div>*@
-
-    @*<div class="form-group">
-        <label asp-for="assignedTo" class="control-label">Designer</label>
-        @Html.TextBoxFor(m => m.assignedTo, new { @class = "form-control" })
-        <span asp-validation-for="assignedTo" class="text-danger"></span>
-    </div>*@
-
     <div class="form-group project-dates">
         <label asp-for="startDate" class="control-label">Start Date</label>
         @Html.TextBoxFor(m => m.startDate, "{0:MM/dd/yyyy}", new { @class = "form-control" })
@@ -98,24 +80,6 @@
         <label asp-for="wbs_link" class="control-label">WBS</label>
         @Html.TextBoxFor(m => m.wbs_link, new { @class = "form-control" })
         <span asp-validation-for="wbs_link" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="PSDs" class="control-label">PSDs</label>
-        @Html.TextBoxFor(m => m.PSDs, new { @class = "form-control" })
-        <span asp-validation-for="PSDs" class="text-danger"></span>
-    </div>
-
-    @*<div class="form-group">
-        <label asp-for="collabDeck" class="control-label">Collab Deck</label>
-        @Html.TextBoxFor(m => m.collabDeck, new { @class = "form-control" })
-        <span asp-validation-for="collabDeck" class="text-danger"></span>
-    </div>*@
-
-    <div class="form-group">
-        <label asp-for="fxfDeck" class="control-label">FxF Deck</label>
-        @Html.TextBoxFor(m => m.fxfDeck, new { @class = "form-control" })
-        <span asp-validation-for="fxfDeck" class="text-danger"></span>
     </div>
 
     <div class="form-group">
